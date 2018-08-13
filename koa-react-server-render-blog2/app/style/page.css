@@ -1,0 +1,248 @@
+/*******
+ * App *
+ *******/
+.app {
+  max-width: 1180px;
+  min-height: 100%;
+  overflow: hidden;
+  font-family: "-apple-system","Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+.app-left-col {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url("../static/img/background3.jpg");
+  background-size: cover;
+  z-index: 2;
+}
+.app-right-col {
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-height: 100%;
+  padding-top: 10px;
+  margin-bottom: 90px;
+}
+.app-footer {
+  position: absolute;
+  float: left;
+  width: 100%;
+  bottom: 0;
+  line-height: 1.5;
+  padding: 0 15px;
+}
+.app-footer small a {
+  color: #333
+}
+@media (min-width: 768px) {
+  .app-left-col {
+    width: 270px;
+    height: 100%;
+  }
+
+  .app-right-col {
+    padding-left: 270px;
+  }
+  .app-footer {
+    margin-left: -135px;
+  }
+}
+@media (max-width: 1024px) {
+  .app-left-col {
+    width: 210px;
+  }
+  .app-right-col {
+    padding-left: 210px;
+  }
+  .app-footer {
+    margin-left: -105px;
+  }
+}
+@media (max-width: 767px){
+  .app-left-col {
+    width: 100%;
+    height: 180px;
+    position: absolute;
+  }
+
+  .app-right-col {
+    margin-left: 0;
+    padding: 0;
+    margin-top: 180px;
+  }
+  .app-footer {
+    margin-left: 0;
+  }
+}
+/*************
+ * post list *
+ *************/
+.post-list-link {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.post-list-item {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #fff;
+  padding: 20px 0 10px 0;
+}
+
+.post-list-item .post-list-item-title {
+  font-size: 1.8em;
+  margin: 0 0 10px;
+  font-weight: 300;
+  border-bottom: none;
+}
+
+.post-list-item .post-list-item-title a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, .7);
+  transition: color .3s;
+}
+
+.post-list-item .post-list-item-title a:hover {
+  color: #108ee9;
+}
+.post-list-item .post-list-item-meta {
+  margin-top: 10px;
+}
+.post-list-item .post-list-item-meta time {
+  color: #333333;
+  font-size: 0.85em;
+}
+
+/********
+ * POST *
+ ********/
+.post-label {
+  margin-right: 10px !important;
+}
+
+/********
+ * NAV *
+ ********/
+.nav-icon {
+  border-radius: 50%;
+  height: 170px;
+  width: 170px;
+  margin: 40px auto;
+  background-image: url("../static/img/icon.png");
+  background-size: cover;
+}
+
+.nav-main-link ul {
+  padding: 20px 0;
+  list-style: none;
+}
+
+.nav-main-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-shadow: 0 1px #666;
+}
+
+.nav-main-link a:hover,
+.nav-main-link a:focus {
+  color: #e6e6e6;
+}
+.nav-main-link li {
+  margin-bottom: 10px;
+}
+
+.nav-sub-link li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.nav-name a {
+  color: white;
+  font-size: 24px;
+}
+
+.nav-sub-link a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+}
+
+.nav-icon-search {
+  border: 1px solid #afb6ca;
+  background: #afb6ca url("../static/img/search.png") no-repeat center;
+  background-size: 90%;
+}
+
+.nav-icon-github {
+  border: 1px solid #24282d;
+  background: #24282d url("../static/img/github.png") no-repeat center;
+  background-size: 90%;
+}
+
+@media (max-width: 767px) {
+  .nav-icon {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto 0;
+  }
+  .nav-main-link li {
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 0;
+  }
+  .nav-main-link ul {
+    padding: 5px 0;
+  }
+  .nav-name {
+    display: none;
+  }
+  .nav-sub-link a {
+    width: 24px;
+    height: 24px;
+  }
+}
+/************
+ * archives *
+ ************/
+/************
+ *  series  *
+ ************/
+/**********
+ * post   *
+ **********/
+.post .post-created-time,
+.series .post-created-time,
+.archives .post-created-time {
+  margin-left: 10px;
+  color: rgba(180,180,180, 0.9);
+  font-size: 0.85em;
+}
+/*******
+ * toc *
+ *******/
+@media (max-width: 991px) {
+  #toc {
+    display: none;
+  }
+}
+#toc {
+  min-width: 160px;
+  float: right;
+  margin-top: 10px;
+  margin-left: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  right: 80px;
+
+}
+#toc > p {
+  margin-bottom: 0;
+  border-bottom: 1px solid #ddd;
+  font-weight: 700;
+}
+#toc ul {
+  line-height: 1;
+}
