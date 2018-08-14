@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="/sign_up" method="post")
+    input(type="text" value="dyy" name="user_name" class="user_name")
+    input(type="text" name="password" value="111" class="password")
+    input(type="text" name="email" value="gtfx0209@qq.com" class="email")
+    button(type="submit")注册
+
