@@ -53,7 +53,7 @@
     "koa-static": "^2.0.0",
     "koa-views": "^5.1.2",
     "leancloud-storage": "^1.5.0",
-    "mongoose": "^4.6.0",
+    "mongoose": "^5.7.8",
     "nodemon": "^1.10.2",
     "nprogress": "^0.2.0",
     "nunjucks": "^2.5.2",
